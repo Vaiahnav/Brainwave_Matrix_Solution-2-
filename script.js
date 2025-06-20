@@ -65,4 +65,5 @@ function showToast() {
   }, 1500);
 }
 
+
 renderProducts();
