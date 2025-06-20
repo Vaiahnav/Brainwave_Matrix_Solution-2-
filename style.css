@@ -165,6 +165,7 @@ main {
   border-radius: 8px;
 }
 
+
 .card:hover {
   transform: translateY(-5px);
 }
