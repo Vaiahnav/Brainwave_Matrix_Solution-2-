@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Products | My Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ My Shop</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main id="product-list"></main>
+
+<div id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p>Total: ₹<span id="total-price">0</span></p>
+  <button onclick="toggleCart()">Close</button>
+</div>
+
+<div id="toast">Added to cart!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
