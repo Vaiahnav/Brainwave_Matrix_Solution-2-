@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 6px 10px;
+}
+
+nav a:hover, nav a.active {
+  background: #ff5722;
+  border-radius: 4px;
+}
+
+main {
+  padding: 2rem;
+}
+
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.product {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 0.5rem 0;
+}
+
+.product p {
+  color: green;
+  font-weight: bold;
+}
+
+.product button {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cart {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#cart.open {
+  right: 0;
+}
+
+#toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#toast.show {
+  opacity: 1;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url("images/shoes.jpg") no-repeat center center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  background: #ff5722;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #e64a19;
+}
+
+/* Highlights Section */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  background: #fff;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
